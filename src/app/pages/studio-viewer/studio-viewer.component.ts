@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 
 @Component({
-  selector: 'app-studio-viewer',
+  selector: 'ngx-app-studio-viewer',
   templateUrl: './studio-viewer.component.html',
   styleUrls: ['./studio-viewer.component.scss']
 })
