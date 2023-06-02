@@ -1,5 +1,5 @@
 # compiled output
-# /dist
+/dist
 /tmp
 /out-tsc
 
@@ -31,7 +31,7 @@
 npm-debug.log
 testem.log
 /typings
-/docs
+# /docs
 
 # e2e
 /e2e/*.js
