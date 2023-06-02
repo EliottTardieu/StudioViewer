@@ -20,8 +20,8 @@ export const MENU_ITEMS: NbMenuItem[] = [
     },
     children: [
       {
-        title: 'Studio 1',
-        data: 'Studio_1',
+        title: 'Studio 220',
+        data: 'Studio_220',
         link: '/pages/studio/1',
         icon: {
           icon: 'house-user',
@@ -29,8 +29,8 @@ export const MENU_ITEMS: NbMenuItem[] = [
         },
       },
       {
-        title: 'Studio 2',
-        data: 'Studio_2',
+        title: 'Studio 3',
+        data: 'Studio_3',
         link: '/pages/studio/2',
         icon: {
           icon: 'house-user',

@@ -25,6 +25,8 @@ import {AngularFireModule} from '@angular/fire/compat';
 import {HomeComponent} from "./pages/home/home.component";
 import {StudioViewerComponent} from "./pages/studio-viewer/studio-viewer.component";
 import {ContactComponent} from "./pages/contact/contact.component";
+import {GalleryModule} from "ng-gallery";
+import {LightboxModule} from "ng-gallery/lightbox";
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import {ContactComponent} from "./pages/contact/contact.component";
     ContactComponent,
   ],
   imports: [
+    GalleryModule,
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
@@ -50,6 +53,7 @@ import {ContactComponent} from "./pages/contact/contact.component";
     CoreModule.forRoot(),
     ThemeModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase),
+    LightboxModule,
   ],
   bootstrap: [AppComponent],
 })

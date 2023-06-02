@@ -1,0 +1,30 @@
+@use '../../@theme/styles/themes' as *;
+
+p {
+  font-size: 1.2rem;
+}
+
+.header {
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+
+  .header-text {
+    background-color: nb-theme(color-info-transparent-600);
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+.sticky-info {
+  position: fixed;
+  top: 15rem;
+  right: 0;
+  background-color: nb-theme(color-info-800);
+  border-radius: 2.5rem 0  0 2.5rem;
+  z-index: 2;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  //min-height: 25rem;
+  max-height: 25rem;
+}

@@ -4,6 +4,8 @@
 @import '@nebular/theme/styles/themes';
 
 $nb-themes: nb-register-theme((
+  color-info-800: #ffffff,
+  color-info-transparent-600: rgba(255,255,255,60%),
   layout-padding-top: 2.25rem,
 
   menu-item-icon-margin: 0 0.5rem 0 0,

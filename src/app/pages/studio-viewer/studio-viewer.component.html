@@ -1,8 +1,24 @@
 <div class="d-flex flex-column align-items-center justify-content-center col-12">
-  <div class="header col-12" style="max-height: 20%; min-height: 10rem; background-color: blue;">
-test
+  <div class="d-flex header col-12 align-items-center justify-content-center" style="max-height: 20%; min-height: 10rem; background-image: url({{this.background}});">
+    <div class="header-text p-4">
+      {{this.title}}
+    </div>
   </div>
-  <div class="col-8" style="background-color: red;">
-test
+  <div class="row col-12 align-items-center justify-content-center">
+    <div class="col-2 offset-10 sticky-info d-flex flex-column align-items-center justify-content-center">
+      <h4>Informations</h4>
+      <br/>
+      <h5><u>Téléphone :</u> {{environment.phone_number}}</h5>
+      <p><u>Tarifs :</u> {{this.costs}}</p>
+      <p><u>Moyens de paiements :</u> {{this.payments}}</p>
+    </div>
+    <div class="col-8 d-flex flex-column mt-4">
+      <h4>{{this.pageTitle}}</h4>
+      <br/>
+      <p>{{this.pageContent}}</p>
+      <p>Véhicule : {{this.pageVehicle}}</p>
+      <p>Salle de bain : {{this.pageWC}}</p>
+      <gallery gallerize [items]="photos" thumbPosition="bottom"></gallery>
+    </div>
   </div>
 </div>
